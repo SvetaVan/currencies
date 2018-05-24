@@ -1,0 +1,14 @@
+currencies/rates/processdata/SelectAllStrategy.class
+currencies/rates/CurrencyRateRepository.class
+currencies/rates/MySQLTest.class
+currencies/rates/processdata/SelectByDateStrategy.class
+currencies/rates/CurrencyRate.class
+currencies/generated/CurrencyRate.class
+currencies/generated/ObjectFactory.class
+currencies/generated/CurrenciesRates.class
+currencies/rates/processdata/UpdateStrategy.class
+currencies/rates/processdata/DeleteStrategy.class
+regexp/TelephoneRegExp.class
+currencies/rates/Currencies.class
+regexp/DateRegExp.class
+currencies/rates/processdata/SaveStrategy.class

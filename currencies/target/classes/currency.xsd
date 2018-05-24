@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="currenciesRates">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="currencyRate" type="CurrencyRate" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="CurrencyRate">
+        <xs:sequence>
+            <xs:element name="id" type="xs:int" />
+            <xs:element name="currency">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="DOLLAR"/>
+                        <xs:enumeration value="RUBLE"/>
+                        <xs:enumeration value="EURO"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="rate" type="xs:int"/>
+            <xs:element name="date" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
